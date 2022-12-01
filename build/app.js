@@ -1,11 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = require("express");
-const cors_1 = require("cors");
-const app = (0, express_1.default)();
-app.use(express_1.default.json());
-app.use((0, cors_1.default)());
+const express = require("express");
+const cors = require("cors");
+const app = express();
+app.use(express.json());
+app.use(cors());
 app.listen(3003, () => {
-    console.log("");
+    console.log("Server Ready!");
 });
+exports.default = app;
 //# sourceMappingURL=app.js.map

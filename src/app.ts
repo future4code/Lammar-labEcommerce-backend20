@@ -7,6 +7,7 @@ app.use(express.json())
 app.use(cors())
 
 app.listen(3003, () =>{
-    console.log("Server Ready!")
-    
+    console.log("Server Ready!")  
 })
+
+export default app;
