@@ -5,4 +5,5 @@ import getAllCharacters from "./endPoints/getAllCharacters"
 
 app.get("/character", getAllCharacters)
 app.put("/character", createCharacter)
-app.delete("/character/id", deleteCharacter)
+app.delete("/character/:id", deleteCharacter)
+
